@@ -1,0 +1,15 @@
+n=int(input())
+a=[' ']*n
+a[n-1]='*'
+for x in range(n-1):
+    b=a.copy()
+    b[n-x-1]='*'
+    
+    print(''.join(b))
+b=['*']*n
+print(''.join(b))
+for x in reversed(range(n-1)):
+    b=a.copy()
+    b[n-x-1]='*'
+    print(''.join(b))
+    

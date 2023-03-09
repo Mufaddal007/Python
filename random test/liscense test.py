@@ -1,0 +1,10 @@
+name=input()
+n=int(input())
+str1=input()
+narr=list(str1.split())
+narr.append(name)
+narr.sort()
+newarr=narr[:narr.index(name)+1]
+y=20*len(newarr)
+y=int(y/n)
+print(y)

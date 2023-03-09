@@ -1,0 +1,24 @@
+n=int(input())
+a=[' ']*n
+a[0]='*'
+c=[' ']*n
+c[n-1]='*'
+for x in range(n-1):
+    b=a.copy()
+    b[x]='*'
+    print(''.join(b),end=" ")
+    b=c.copy()
+    b[n-x-1]='*'
+    print(''.join(b))
+b=['*']*2*n
+print(''.join(b))
+for x in reversed(range(n-1)):
+    b=a.copy()
+    b[x]='*'
+    print(''.join(b),end=" ")
+
+    b=c.copy()
+    b[n-x-1]='*'
+    print(''.join(b))
+    
+

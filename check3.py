@@ -1,0 +1,5 @@
+age=input("What's your age?")
+name=input("What's your name?")
+print(name, age)
+print('check1')
+print(5)
